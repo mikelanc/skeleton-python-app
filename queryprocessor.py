@@ -9,4 +9,6 @@ def process_query(query):
         return max(numbers)
     if ("plus" in query.lower()):
         return sum([int(s) for s in query.split() if s.isdigit()])
+    if ("which year was Theresa May first elected" in query.lower()):
+        return "2016"
     return ""
