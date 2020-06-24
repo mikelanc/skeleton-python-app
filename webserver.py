@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def root():
-    return "The server is running!"
+    return "Pipeline is running!"
 
 @app.route("/api")
 def api():
