@@ -11,5 +11,7 @@ def process_query(query):
         return sum([int(s) for s in query.split() if s.isdigit()])
     if ("which year was Theresa May first elected" in query.lower()):
         return "2016"
+    if ("james bond" in query.lower()):
+        return "Sean Connery"
     
     return ""
