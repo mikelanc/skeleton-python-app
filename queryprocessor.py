@@ -13,5 +13,6 @@ def process_query(query):
         return "2016"
     if ("james bond" in query.lower()):
         return "Sean Connery"
-    
+    if ("eiffel" in query.lower()):
+        return "Paris"
     return ""
