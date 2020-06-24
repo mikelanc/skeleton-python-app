@@ -26,6 +26,9 @@ def process_query(query):
         return max(test_list)
     if ("plus" in query.lower()):
         return sum([int(s) for s in query.split() if s.isdigit()])
+    if ("minus" in query.lower()):
+        values = [int(s) for s in query.split() if s.isdigit()]
+        return values[0] - values[1]
     if ("which year was Theresa May first elected" in query.lower()):
         return "2016"
     if ("james bond" in query.lower()):
